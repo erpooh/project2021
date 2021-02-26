@@ -11,6 +11,7 @@ import IndexView from "../component/indexView";
 const initState = {};
 
 class Home extends React.Component {
+    /////////////////////////////////////////////////////////////// Pre Rendering
     static async getInitialProps(ctx) {
         var returnValue = {};
         returnValue.query = ctx.query;
@@ -18,6 +19,7 @@ class Home extends React.Component {
         returnValue.cookies = ctx.req.cookies;
         return returnValue;
     }
+    /////////////////////////////////////////////////////////////// Pre Rendering
     constructor(props) {
         super(props);
         this.state = initState;
